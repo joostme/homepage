@@ -1,0 +1,17 @@
+@import "../variables";
+.hero {
+    width: 100%;
+    position: relative;
+    height: 128px;
+    background-color: $color-gold;
+    border-bottom: 1px solid $color-light;
+}
+
+.hero>img {
+    width: 256px;
+    margin-left: -128px;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}

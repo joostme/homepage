@@ -1,0 +1,48 @@
+@import "../variables";
+@import "../components/shadow";
+.work {
+    background-color: $color-lightblue;
+    color: white;
+    text-align: center;
+    padding: 2rem 10% 3rem 10%;
+    h1 {
+        margin: 0;
+    }
+    h3 {
+        text-align: left;
+    }
+    ul {
+        color: $color-dark;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            @extend .drop-shadow;
+            align-items: center;
+            position: relative;
+            text-align: left;
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            .heading {
+                display: flex;
+                flex-wrap: wrap;
+                h1 {
+                    flex-grow: 1;
+                }
+                h3 {
+                    flex-grow: 1;
+                    text-align: right;
+                    margin: 0;
+                    color: rgba($color-dark, 0.5);
+                }
+            }
+            .content {
+                h4 {
+                    color: $color-gold;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

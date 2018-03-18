@@ -1,0 +1,13 @@
+@import "variables";
+@import "sections/nav";
+@import "sections/top";
+@import "sections/hero";
+@import "sections/about";
+@import "sections/work";
+@import "components/heading";
+@import "components/shadow";
+body {
+    color: $color-dark;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}

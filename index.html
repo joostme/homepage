@@ -7,22 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
     <title>Joost Zöllner - joost.io</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="drop-shadow">
             <ul>
                 <li class="right">
                     <a href="https://github.com/joostme">
@@ -53,14 +49,60 @@
     </section>
 
     <section class="hero">
-        <img src="img/hero.jpg" alt="Hero Image">
+        <img src="img/hero.jpg" alt="Hero Image" class="drop-shadow">
     </section>
 
-    <div class="divider"></div>
+    <section class="about">
+        <h1 class="section-heading">Über mich</h1>
+        <p>Moin! Ich bin Joost.</p>
+        <p>Ich bin leidenschaftlicher Softwareentwickler mit einem Fokus auf JavaScript und Frontend Frameworks wie <strong>Angular</strong>, <strong>ReactJS</strong> und <strong>VueJS</strong>.</p>
+        <p>In meiner Freizeit informiere ich mich gerne über neue Entwicklungen um JavaScript oder Web Technologien allgemein. Zu aktuellen Themen gehören beispielsweise <strong>Functional Programming</strong>, <strong>GraphQL</strong> oder <strong>Redux</strong>.</p>
+    </section>
 
-    <section class="hero-text">
-        <h1 class="about-me">About Me</h1>
-        <p></p>
+    <section class="work inner-shadow">
+        <h1 class="section-heading">Erfahrungen</h1>
+        <h3>Beruflich</h3>
+        <ul>
+            <li>
+                <div class="heading">
+                    <h1>T-Systems Multimedia Solutions GmbH</h1>
+                    <h3>2017 - heute</h3>
+                </div>
+                <div class="content">
+                    <h4>Software Engineer</h4>
+                </div>
+            </li>
+            <li>
+                <div class="heading">
+                    <h1>T-Systems International GmbH</h1>
+                    <h3>2013 - 2017</h3>
+                </div>
+                <div class="content">
+                    <h4>Dualer Student</h4>
+                </div>
+            </li>
+        </ul>
+        <h3>Akademisch</h3>
+        <ul>
+            <li>
+                <div class="heading">
+                    <h1>Nordakademie Graduate School</h1>
+                    <h3>2017 - heute</h3>
+                </div>
+                <div class="content">
+                    <h4>Master of Science Wirtschaftsinformatik / IT-Management</h4>
+                </div>
+            </li>
+            <li>
+                <div class="heading">
+                    <h1>Nordakademie</h1>
+                    <h3>2013 - 2017</h3>
+                </div>
+                <div class="content">
+                    <h4>Bachelor of Science Wirtschaftsinformatik</h4>
+                </div>
+            </li>
+        </ul>
     </section>
 
 </body>
