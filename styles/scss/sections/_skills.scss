@@ -1,0 +1,21 @@
+@import "../variables";
+.skills {
+    padding: 2rem 10% 3rem 10%;
+    text-align: center;
+    .skill-list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        li {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            i {
+                color: $color-indigo;
+                font-size: 5rem;
+                margin: .5rem;
+            }
+        }
+    }
+}
