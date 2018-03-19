@@ -15,6 +15,9 @@
                 color: $color-indigo;
                 font-size: 5rem;
                 margin: .5rem;
+                &:hover {
+                    color: $color-gold;
+                }
             }
         }
     }

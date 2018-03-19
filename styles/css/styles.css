@@ -131,6 +131,8 @@ header {
         color: #166DC5;
         font-size: 5rem;
         margin: .5rem; }
+        .skills .skill-list li i:hover {
+          color: #C68642; }
 
 h1,
 h2,
