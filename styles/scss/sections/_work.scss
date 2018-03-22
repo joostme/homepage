@@ -1,43 +1,52 @@
 @import "../variables";
-@import "../components/shadow";
+@import "../mixins/mixins";
 .work {
+    @include section-padding();
+    @include inner-shadow();
     background-color: $color-lightblue;
-    color: white;
-    text-align: center;
-    padding: 2rem 10% 3rem 10%;
-    h3 {
-        text-align: left;
+    background: linear-gradient($color-lightblue, rgba($color-lightblue, 0.5));
+}
+
+.work__heading {
+    @include section-heading();
+}
+
+.work__sectionHeading {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    text-align: left;
+}
+
+.work__list {
+    color: $color-dark;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.work__listItem {
+    @include drop-shadow();
+    align-items: center;
+    position: relative;
+    text-align: left;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.work__title {
+    display: flex;
+    flex-wrap: wrap;
+    .work__company {
+        flex-grow: 1;
     }
-    ul {
-        color: $color-dark;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        li {
-            @extend .drop-shadow;
-            align-items: center;
-            position: relative;
-            text-align: left;
-            background-color: white;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            .heading {
-                display: flex;
-                flex-wrap: wrap;
-                h1 {
-                    flex-grow: 1;
-                }
-                h3 {
-                    flex-grow: 1;
-                    text-align: right;
-                    color: rgba($color-dark, 0.5);
-                }
-            }
-            .content {
-                h4 {
-                    color: $color-gold;
-                }
-            }
-        }
+    .work__year {
+        flex-grow: 1;
+        text-align: right;
+        color: rgba($color-dark, 0.5);
     }
+}
+
+.work__role {
+    color: $color-gold;
 }

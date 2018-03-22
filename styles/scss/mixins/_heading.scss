@@ -1,0 +1,19 @@
+@import "../variables";
+
+@mixin section-heading($color: $color-gold) {
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+    &::after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        height: 2px;
+        width: 50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 2px;
+        background: $color;
+    }
+}

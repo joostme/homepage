@@ -1,5 +1,11 @@
 @import "../variables";
+@import "../mixins/mixins";
 .about {
+    @include inner-shadow();
+    @include section-padding();
     text-align: center;
-    padding: 2rem 10% 3rem 10%;
+}
+
+.about__heading {
+    @include section-heading();
 }

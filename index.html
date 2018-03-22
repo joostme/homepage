@@ -18,22 +18,22 @@
 </head>
 
 <body>
-    <header>
-        <nav class="drop-shadow">
-            <ul>
-                <li class="right">
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__listItem">
                     <a href="https://github.com/joostme">
-                        <i class="fab fa-github header-icon"></i>
+                        <i class="fab fa-github nav__icon"></i>
                     </a>
                 </li>
-                <li class="right">
+                <li class="nav__listItem">
                     <a href="https://www.xing.com/profile/Joost_Zoellner">
-                        <i class="fab fa-xing header-icon"></i>
+                        <i class="fab fa-xing nav__icon"></i>
                     </a>
                 </li>
-                <li class="right">
+                <li class="nav__listItem">
                     <a href="mailto:work@joost.io">
-                        <i class="fas fa-envelope header-icon"></i>
+                        <i class="fas fa-envelope nav__icon"></i>
                     </a>
                 </li>
             </ul>
@@ -41,138 +41,173 @@
     </header>
 
     <section class="top">
-        <div class="top-overlay">
-            <div class="top-content">
-                <h1>Joost Zöllner</h1>
-                <h2>Software Engineer</h2>
+        <div class="top__overlay">
+            <div class="top__content">
+                <h1 class="top__text--large">Joost Zöllner</h1>
+                <h2 class="top__text--small">Software Engineer</h2>
             </div>
         </div>
     </section>
 
     <section class="hero">
-        <img src="img/hero.jpg" alt="Hero Image" class="drop-shadow">
+        <div class="hero__image">
+            <div class="hero__overlay"></div>
+        </div>
     </section>
 
     <section class="about">
-        <h1 class="section-heading">Über mich</h1>
+        <h1 class="about__heading">Über mich</h1>
         <p>Moin! Ich bin Joost.</p>
         <p>Ich bin leidenschaftlicher Softwareentwickler mit einem Fokus auf JavaScript und Frontend Frameworks wie <strong>Angular</strong>, <strong>ReactJS</strong> und <strong>VueJS</strong>.</p>
         <p>In meiner Freizeit informiere ich mich gerne über neue Entwicklungen um JavaScript oder Web Technologien allgemein. Zu aktuellen Themen gehören beispielsweise <strong>Functional Programming</strong>, <strong>GraphQL</strong> oder <strong>Redux</strong>.</p>
         <p>Nebenberuflich studiere ich zur Zeit im Master Wirtschaftsinformatik an der <strong>Nordakademie Graduate School</strong>.</p>
     </section>
 
-    <section class="work inner-shadow">
-        <h1 class="section-heading">Erfahrungen</h1>
-        <h3>Beruflich</h3>
-        <ul>
-            <li>
-                <div class="heading">
-                    <h1>T-Systems Multimedia Solutions GmbH</h1>
-                    <h3>2017 - heute</h3>
+    <section class="work">
+        <h1 class="work__heading">Erfahrungen</h1>
+        <h3 class="work__sectionHeading">Beruflich</h3>
+        <ul class="work__list">
+            <li class="work__listItem">
+                <div class="work__title">
+                    <h1 class="work__company">T-Systems Multimedia Solutions GmbH</h1>
+                    <h3 class="work__year">2017 - heute</h3>
                 </div>
-                <div class="content">
-                    <h4>Software Engineer</h4>
+                <div>
+                    <h4 class="work__role">Software Engineer</h4>
                 </div>
             </li>
-            <li>
-                <div class="heading">
-                    <h1>T-Systems International GmbH</h1>
-                    <h3>2013 - 2017</h3>
+            <li class="work__listItem">
+                <div class="work__title">
+                    <h1 class="work__company">T-Systems International GmbH</h1>
+                    <h3 class="work__year">2013 - 2017</h3>
                 </div>
-                <div class="content">
-                    <h4>Dualer Student</h4>
+                <div>
+                    <h4 class="work__role">Dualer Student</h4>
                 </div>
             </li>
         </ul>
-        <h3>Akademisch</h3>
-        <ul>
-            <li>
-                <div class="heading">
-                    <h1>Nordakademie Graduate School</h1>
-                    <h3>2017 - heute</h3>
+        <h3 class="work__sectionHeading">Akademisch</h3>
+        <ul class="work__list">
+            <li class="work__listItem">
+                <div class="work__title">
+                    <h1 class="work__company">Nordakademie Graduate School</h1>
+                    <h3 class="work__year">2017 - heute</h3>
                 </div>
-                <div class="content">
-                    <h4>Master of Science Wirtschaftsinformatik / IT-Management</h4>
+                <div>
+                    <h4 class="work__role">Master of Science Wirtschaftsinformatik / IT-Management</h4>
                 </div>
             </li>
-            <li>
-                <div class="heading">
-                    <h1>Nordakademie</h1>
-                    <h3>2013 - 2017</h3>
+            <li class="work__listItem">
+                <div class="work__title">
+                    <h1 class="work__company">Nordakademie</h1>
+                    <h3 class="work__year">2013 - 2017</h3>
                 </div>
-                <div class="content">
-                    <h4>Bachelor of Science Wirtschaftsinformatik</h4>
+                <div>
+                    <h4 class="work__role">Bachelor of Science Wirtschaftsinformatik</h4>
                 </div>
             </li>
         </ul>
     </section>
 
-    <section class="skills inner-shadow">
-        <h1 class="section-heading">Skills</h1>
-        <ul class="skill-list">
-            <li>
-                <i class="devicon-html5-plain"></i>
+    <section class="skills">
+        <h1 class="skills__heading">Skills</h1>
+        <ul class="skills__list">
+            <li class="skills__listItem">
+                <i class="devicon-html5-plain skills__icon"></i>
                 <span>HTML5</span>
             </li>
-            <li>
-                <i class="devicon-css3-plain"></i>
+            <li class="skills__listItem">
+                <i class="devicon-css3-plain skills__icon"></i>
                 <span>CSS3</span>
             </li>
-            <li>
-                <i class="devicon-javascript-plain"></i>
+            <li class="skills__listItem">
+                <i class="devicon-javascript-plain skills__icon"></i>
                 <span>JavaScript</span>
             </li>
-            <li>
-                <i class="devicon-typescript-plain"></i>
+            <li class="skills__listItem">
+                <i class="devicon-typescript-plain skills__icon"></i>
                 <span>TypeScript</span>
             </li>
-            <li>
-                <i class="devicon-nodejs-plain"></i>
+            <li class="skills__listItem">
+                <i class="devicon-nodejs-plain skills__icon"></i>
                 <span>NodeJS</span>
             </li>
-            <li>
-                <i class="devicon-angularjs-plain"></i>
+            <li class="skills__listItem">
+                <i class="devicon-angularjs-plain skills__icon"></i>
                 <span>Angular 2+</span>
             </li>
-            <li>
-                <i class="devicon-react-original"></i>
+            <li class="skills__listItem">
+                <i class="devicon-react-original skills__icon"></i>
                 <span>ReactJS</span>
             </li>
-            <li>
-                <i class="devicon-vuejs-plain"></i>
+            <li class="skills__listItem">
+                <i class="devicon-vuejs-plain skills__icon"></i>
                 <span>VueJS</span>
             </li>
-            <li>
-                <i class="devicon-webpack-plain"></i>
+            <li class="skills__listItem">
+                <i class="devicon-webpack-plain skills__icon"></i>
                 <span>Webpack</span>
             </li>
-            <li>
-                <i class="devicon-jasmine-plain"></i>
+            <li class="skills__listItem">
+                <i class="devicon-jasmine-plain skills__icon"></i>
                 <span>Jasmine</span>
             </li>
-            <li>
-                <i class="devicon-bootstrap-plain"></i>
+            <li class="skills__listItem">
+                <i class="devicon-bootstrap-plain skills__icon"></i>
                 <span>Bootstrap</span>
             </li>
-            <li>
-                <i class="devicon-sass-original"></i>
+            <li class="skills__listItem">
+                <i class="devicon-sass-original skills__icon"></i>
                 <span>SASS</span>
             </li>
-            <li>
-                <i class="devicon-less-plain-wordmark"></i>
+            <li class="skills__listItem">
+                <i class="devicon-less-plain-wordmark skills__icon"></i>
                 <span>LESS</span>
             </li>
-            <li>
-                <i class="devicon-git-plain"></i>
+            <li class="skills__listItem">
+                <i class="devicon-git-plain skills__icon"></i>
                 <span>Git</span>
             </li>
-            <li>
-                <i class="devicon-visualstudio-plain"></i>
+            <li class="skills__listItem">
+                <i class="devicon-visualstudio-plain skills__icon"></i>
                 <span>VSCode</span>
             </li>
         </ul>
     </section>
 
+    <section class="projects">
+        <h1 class="projects__heading">Projekte</h1>
+        <ul class="projects__list">
+            <li class="projects__listItem">
+                <h1><a href="https://github.com/joostme/vue-todo">vue-todo</a></h1>
+                <p>A simple todo list with VueJS</p>
+                <ul class="project__techList">
+                    <li class="project__tech">VueJS</li>
+                    <li class="project__tech">Vuex</li>
+                    <li class="project__tech">Vue-Router</li>
+                    <li class="project__tech">Axios</li>
+                    <li class="project__tech">Bulma</li>
+                </ul>
+            </li>
+            <li class="projects__listItem">
+                <h1><a href="https://github.com/joostme/ngrx-resolve">ngrx-resolve</a></h1>
+                <p>An example application on connecting routes, resolvers and ngrx in Angular</p>
+                <ul class="project__techList">
+                    <li class="project__tech">Angular 2+</li>
+                    <li class="project__tech">ngrx</li>
+                    <li class="project__tech">RxJS</li>
+                </ul>
+            </li>
+            <li class="projects__listItem">
+                <h1><a href="https://github.com/joostme/pighole">pighole</a></h1>
+                <p>A functional game library for the game Pig Hole Big Hole</p>
+                <ul class="project__techList">
+                    <li class="project__tech">TypeScript</li>
+                    <li class="project__tech">Lodash</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 </body>
 
 </html>

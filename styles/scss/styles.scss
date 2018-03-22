@@ -1,14 +1,13 @@
 @import "variables";
-@import "sections/nav";
-@import "sections/top";
-@import "sections/hero";
-@import "sections/about";
-@import "sections/work";
-@import "sections/skills";
-@import "components/heading";
-@import "components/shadow";
+@import "sections/sections";
+@import "components/components";
+@import "mixins/mixins";
 body {
     color: $color-dark;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+}
+
+* {
+    box-sizing: border-box;
 }

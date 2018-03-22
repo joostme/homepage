@@ -1,24 +1,38 @@
 @import "../variables";
+@import "../mixins/mixins";
 .skills {
-    padding: 2rem 10% 3rem 10%;
+    @include section-padding();
+    @include inner-shadow();
     text-align: center;
-    .skill-list {
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        li {
-            display: flex;
-            flex-direction: column;
-            padding: 1rem;
-            i {
-                color: $color-indigo;
-                font-size: 5rem;
-                margin: .5rem;
-                &:hover {
-                    color: $color-gold;
-                }
-            }
-        }
+}
+
+.skills__heading {
+    @include section-heading();
+}
+
+.skills__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.skills__listItem {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.skills__icon {
+    color: $color-blue;
+    font-size: 5rem;
+    margin: .5rem;
+    &:hover {
+        color: $color-gold;
+    }
+    
+    @media screen and (max-width: 1024px) {
+        font-size: 3rem;
     }
 }
