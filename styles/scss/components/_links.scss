@@ -1,0 +1,17 @@
+@import "../variables";
+
+a:link {
+    color: $color-blue;
+}
+
+a:visited {
+    color: $color-gold;
+}
+
+a:link:hover {
+    color: rgba($color-blue, 0.8);
+}
+
+a:visited:hover {
+    color: rgba($color-gold, 0.5);
+}
