@@ -31,11 +31,12 @@
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
-
+    
     .nav__icon {
         color: white;
         border-radius: 50%;
         font-size: 2rem;
+        text-decoration: none;
     }
 
     &:hover .nav__icon {

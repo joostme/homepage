@@ -28,7 +28,8 @@
   .nav__listItem .nav__icon {
     color: white;
     border-radius: 50%;
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-decoration: none; }
   .nav__listItem:hover .nav__icon {
     color: #C68642; }
 
