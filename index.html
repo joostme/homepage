@@ -5,15 +5,16 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116298412-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'UA-116298412-1');
+        gtag('config', 'UA-116298412-1');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Joost Zöllner, Software Engineer, Frontend Web Development, Hamburg">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/css/styles.css">
@@ -28,24 +29,16 @@
         <nav class="header__nav">
             <ul class="nav__list">
                 <li class="nav__listItem">
-                    <a href="https://github.com/joostme" target="_blank">
-                        <i class="icon-github-circled nav__icon"></i>
-                    </a>
+                    <a href="https://github.com/joostme" target="_blank" class="icon-github-circled nav__icon"></a>
                 </li>
                 <li class="nav__listItem">
-                    <a href="https://www.xing.com/profile/Joost_Zoellner" target="_blank">
-                        <i class="icon-xing nav__icon"></i>
-                    </a>
+                    <a href="https://www.xing.com/profile/Joost_Zoellner" target="_blank" class="icon-xing nav__icon"></a>
                 </li>
                 <li class="nav__listItem">
-                    <a href="https://www.linkedin.com/in/joostzoellner" target="_blank">
-                        <i class="icon-linkedin-squared nav__icon"></i>
-                    </a>
+                    <a href="https://www.linkedin.com/in/joostzoellner" target="_blank" class="icon-linkedin-squared nav__icon"></a>
                 </li>
                 <li class="nav__listItem">
-                    <a href="mailto:work@joost.io">
-                        <i class="icon-mail-alt nav__icon"></i>
-                    </a>
+                    <a href="mailto:work@joost.io" class="icon-mail-alt nav__icon"></a>
                 </li>
             </ul>
         </nav>
@@ -69,9 +62,17 @@
     <section class="about">
         <h1 class="about__heading">Über mich</h1>
         <p>Moin! Ich bin Joost.</p>
-        <p>Ich bin leidenschaftlicher Softwareentwickler mit einem Fokus auf JavaScript und Frontend Frameworks wie <strong>Angular</strong>, <strong>ReactJS</strong> und <strong>VueJS</strong>.</p>
-        <p>In meiner Freizeit informiere ich mich gerne über neue Entwicklungen um JavaScript oder Web Technologien allgemein. Zu aktuellen Themen gehören beispielsweise <strong>Functional Programming</strong>, <strong>GraphQL</strong> oder <strong>Redux</strong>.</p>
-        <p>Nebenberuflich studiere ich zur Zeit im Master Wirtschaftsinformatik an der <strong>Nordakademie Graduate School</strong>.</p>
+        <p>Ich bin leidenschaftlicher Softwareentwickler mit einem Fokus auf JavaScript und Frontend Frameworks wie
+            <strong>Angular</strong>,
+            <strong>ReactJS</strong> und
+            <strong>VueJS</strong>.</p>
+        <p>In meiner Freizeit informiere ich mich gerne über neue Entwicklungen um JavaScript oder Web Technologien allgemein.
+            Zu aktuellen Themen gehören beispielsweise
+            <strong>Functional Programming</strong>,
+            <strong>GraphQL</strong> oder
+            <strong>Redux</strong>.</p>
+        <p>Nebenberuflich studiere ich zur Zeit im Master Wirtschaftsinformatik an der
+            <strong>Nordakademie Graduate School</strong>.</p>
     </section>
 
     <section class="work">
@@ -190,7 +191,9 @@
         <h1 class="projects__heading">Projekte</h1>
         <ul class="projects__list">
             <li class="projects__listItem">
-                <h1><a href="https://github.com/joostme/vue-todo" target="_blank">vue-todo</a></h1>
+                <h1>
+                    <a href="https://github.com/joostme/vue-todo" target="_blank">vue-todo</a>
+                </h1>
                 <p>A simple todo list with VueJS</p>
                 <ul class="project__techList">
                     <li class="project__tech">VueJS</li>
@@ -201,7 +204,9 @@
                 </ul>
             </li>
             <li class="projects__listItem">
-                <h1><a href="https://github.com/joostme/ngrx-resolve" target="_blank">ngrx-resolve</a></h1>
+                <h1>
+                    <a href="https://github.com/joostme/ngrx-resolve" target="_blank">ngrx-resolve</a>
+                </h1>
                 <p>An example application on connecting routes, resolvers and ngrx in Angular</p>
                 <ul class="project__techList">
                     <li class="project__tech">Angular 2+</li>
@@ -210,7 +215,9 @@
                 </ul>
             </li>
             <li class="projects__listItem">
-                <h1><a href="https://github.com/joostme/pighole" target="_blank">pighole</a></h1>
+                <h1>
+                    <a href="https://github.com/joostme/pighole" target="_blank">pighole</a>
+                </h1>
                 <p>A functional game library for the game Pig Hole Big Hole</p>
                 <ul class="project__techList">
                     <li class="project__tech">TypeScript</li>
@@ -221,7 +228,11 @@
     </section>
 
     <footer class="footer">
-        <p class="footer__text">Fonts and Icons from <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> / <a href="https://fontawesome.com/license">License</a> and <a href="http://konpa.github.io/devicon/" target="_blank">DevIcons</a></p>
+        <p class="footer__text">Fonts and Icons from
+            <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> /
+            <a href="https://fontawesome.com/license">License</a> and
+            <a href="http://konpa.github.io/devicon/" target="_blank">DevIcons</a>
+        </p>
     </footer>
 </body>
 
