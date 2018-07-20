@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'devicons';
-  src: url('../font/devicons.eot?52264728');
-  src: url('../font/devicons.eot?52264728#iefix') format('embedded-opentype'),
-       url('../font/devicons.woff2?52264728') format('woff2'),
-       url('../font/devicons.woff?52264728') format('woff'),
-       url('../font/devicons.ttf?52264728') format('truetype'),
-       url('../font/devicons.svg?52264728#devicons') format('svg');
+  src: url('../font/devicons.eot?26096606');
+  src: url('../font/devicons.eot?26096606#iefix') format('embedded-opentype'),
+       url('../font/devicons.woff2?26096606') format('woff2'),
+       url('../font/devicons.woff?26096606') format('woff'),
+       url('../font/devicons.ttf?26096606') format('truetype'),
+       url('../font/devicons.svg?26096606#devicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'devicons';
-    src: url('../font/devicons.svg?52264728#devicons') format('svg');
+    src: url('../font/devicons.svg?26096606#devicons') format('svg');
   }
 }
 */
@@ -29,6 +29,7 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
+  margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
  
@@ -58,10 +59,14 @@
 .devicon-git-plain:before { content: '\e805'; } /* '' */
 .devicon-javascript-plain:before { content: '\e845'; } /* '' */
 .devicon-less-plain-wordmark:before { content: '\e853'; } /* '' */
+.devicon-protractor-plain:before { content: '\e900'; } /* '' */
+.devicon-github-original:before { content: '\e909'; } /* '' */
 .devicon-jasmine-plain:before { content: '\e91a'; } /* '' */
 .devicon-typescript-plain:before { content: '\e920'; } /* '' */
 .devicon-visualstudio-plain:before { content: '\e927'; } /* '' */
 .devicon-webpack-plain:before { content: '\e929'; } /* '' */
 .devicon-vuejs-plain:before { content: '\e931'; } /* '' */
+.devicon-icons8-travis-ci:before { content: '\e9bf'; } /* '' */
+.devicon-jest:before { content: '\e9c0'; } /* '' */
 .devicon-nodejs-plain:before { content: '\eb6a'; } /* '' */
 .devicon-sass-original:before { content: '\ebcb'; } /* '' */
