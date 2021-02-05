@@ -1,0 +1,22 @@
+[
+    {
+        "link": "https://github.com/joostme",
+        "icon": "icon-github-circled",
+        "name": "Github"
+    },
+    {
+        "link": "https://www.xing.com/profile/Joost_Zoellner",
+        "icon": "icon-xing",
+        "name": "Xing"
+    },
+    {
+        "link": "https://www.linkedin.com/in/joostzoellner",
+        "icon": "icon-linkedin-squared",
+        "name": "LinkedIn"
+    },
+    {
+        "link": "mailto:work@joost.io",
+        "icon": "icon-mail-alt",
+        "name": "Mail"
+    }
+]

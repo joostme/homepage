@@ -7,15 +7,19 @@ import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Work from '../components/Work';
+import { getLinks, Link } from '../lib/links';
 import { getProjects, Project } from '../lib/projects';
 import { getSkills, Skill } from '../lib/skills';
+import { getWorkHistory, WorkHistory } from '../lib/work';
 
 export interface HomeProps {
   skills: Skill[];
   projects: Project[];
+  workHistory: WorkHistory;
+  links: Link[];
 }
 
-export default function Home({ skills, projects }: HomeProps ) {
+export default function Home({ skills, projects, workHistory, links }: HomeProps ) {
   return (<>
     <Head>
       <meta charSet="UTF-8" />
@@ -24,10 +28,10 @@ export default function Home({ skills, projects }: HomeProps ) {
       <meta name="Description" content="Joost Zöllner, Software Engineer, Frontend Web Development, Hamburg" />
       <title>Joost Zöllner - joost.io</title>
     </Head>
-    <Header />
+    <Header links={links}/>
     <Hero />
     <About />
-    <Work />
+    <Work workHistory={workHistory} />
     <Skills skills={skills} />
     <Projects projects={projects}/>
     <Footer />
@@ -37,11 +41,15 @@ export default function Home({ skills, projects }: HomeProps ) {
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const skills = getSkills();
   const projects = getProjects();
+  const workHistory = getWorkHistory();
+  const links = getLinks();
 
   return {
     props: {
       skills,
-      projects
+      projects,
+      workHistory,
+      links
     }
   }
 }
