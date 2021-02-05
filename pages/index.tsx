@@ -1,3 +1,4 @@
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import About from '../components/About';
 import Footer from '../components/Footer';
@@ -6,8 +7,13 @@ import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Work from '../components/Work';
+import { getSkills, Skill } from '../lib/skills';
 
-export default function Home() {
+export interface HomeProps {
+  skills: Skill[]
+}
+
+export default function Home({ skills }: HomeProps ) {
   return (<>
     <Head>
       <meta charSet="UTF-8" />
@@ -20,8 +26,18 @@ export default function Home() {
     <Hero />
     <About />
     <Work />
-    <Skills />
+    <Skills skills={skills} />
     <Projects />
     <Footer />
   </>)
+}
+
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const skills = getSkills();
+
+  return {
+    props: {
+      skills
+    }
+  }
 }
