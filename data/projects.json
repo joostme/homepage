@@ -1,0 +1,38 @@
+[
+    {
+        "title": "vue-todo",
+        "description": "A simple todo list with VueJS",
+        "link": "https://github.com/joostme/vue-todo",
+        "tags": ["VueJS", "Vuex", "Vue-Router", "Axios", "Bulma"]
+    },
+    {
+        "title": "ngrx-resolve",
+        "description": "An example application on connecting routes, resolvers and ngrx in Angular",
+        "link": "https://github.com/joostme/ngrx-resolve",
+        "tags": ["Angular", "ngrx", "RxJS"]
+    },
+    {
+        "title": "pighole",
+        "description": "A functional game library for the game Pig Hole Big Hole",
+        "link": "https://github.com/joostme/pighole",
+        "tags": ["TypeScript", "Lodash"]
+    },
+    {
+        "title": "ngx-rps",
+        "description": "A Rock-Paper-Scissors game done with Angular and RxJS",
+        "link": "https://github.com/joostme/ngx-rps",
+        "tags": ["Angular", "RxJS"]
+    },
+    {
+        "title": "takeWhileAlive",
+        "description": "Automatically unsubscribe any active subscriptions inside Angular components/services using a custom operator",
+        "link": "https://github.com/joostme/takeWhileAlive",
+        "tags": ["Angular", "RxJS"]
+    },
+    {
+        "title": "@ngxp/store-service",
+        "description": "Adds an abstraction layer between Angular components and the ngrx store",
+        "link": "https://github.com/ngxp/store-service",
+        "tags": ["Angular", "RxJS", "ngrx"]
+    }
+]

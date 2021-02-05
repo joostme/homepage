@@ -7,13 +7,15 @@ import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Work from '../components/Work';
+import { getProjects, Project } from '../lib/projects';
 import { getSkills, Skill } from '../lib/skills';
 
 export interface HomeProps {
-  skills: Skill[]
+  skills: Skill[];
+  projects: Project[];
 }
 
-export default function Home({ skills }: HomeProps ) {
+export default function Home({ skills, projects }: HomeProps ) {
   return (<>
     <Head>
       <meta charSet="UTF-8" />
@@ -27,17 +29,19 @@ export default function Home({ skills }: HomeProps ) {
     <About />
     <Work />
     <Skills skills={skills} />
-    <Projects />
+    <Projects projects={projects}/>
     <Footer />
   </>)
 }
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const skills = getSkills();
+  const projects = getProjects();
 
   return {
     props: {
-      skills
+      skills,
+      projects
     }
   }
 }
