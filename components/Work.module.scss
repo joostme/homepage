@@ -1,0 +1,52 @@
+@import "../styles/variables";
+@import "../styles/mixins/mixins";
+.work {
+    @include section-padding();
+    @include inner-shadow();
+    background-color: $color-lightblue;
+    background: linear-gradient($color-lightblue, rgba($color-lightblue, 0.5));
+}
+
+.work__heading {
+    @include section-heading();
+}
+
+.work__sectionHeading {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    text-align: left;
+}
+
+.work__list {
+    color: $color-dark;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.work__listItem {
+    @include drop-shadow();
+    align-items: center;
+    position: relative;
+    text-align: left;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.work__title {
+    display: flex;
+    flex-wrap: wrap;
+    .work__company {
+        flex-grow: 1;
+    }
+    .work__year {
+        flex-grow: 1;
+        text-align: right;
+        color: rgba($color-dark, 0.5);
+    }
+}
+
+.work__role {
+    color: $color-gold;
+}

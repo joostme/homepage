@@ -1,0 +1,14 @@
+@import "../styles/variables";
+@import "../styles/mixins/mixins";
+
+.footer {
+    @include inner-shadow();
+    background-color: $color-dark;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer__text {
+    margin: 0;
+}

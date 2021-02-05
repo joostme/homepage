@@ -1,0 +1,11 @@
+@import "../styles/variables";
+@import "../styles/mixins/mixins";
+.about {
+    @include inner-shadow();
+    @include section-padding();
+    text-align: center;
+}
+
+.about__heading {
+    @include section-heading();
+}

@@ -1,0 +1,36 @@
+{
+    "professional": [
+        {
+            "institution": "Holisticon AG",
+            "role": "IT Consultant",
+            "startDate": "07.2018",
+            "endDate": "heute"
+        },
+        {
+            "institution": "T-Systems Multimedia Solutions GmbH",
+            "role": "Software Engineer",
+            "startDate": "03.2017",
+            "endDate": "06.2018"
+        },
+        {
+            "institution": "T-Systems International GmbH",
+            "role": "IT Consultant",
+            "startDate": "10.2013",
+            "endDate": "02.2017"
+        }
+    ],
+    "academic": [
+        {
+            "institution": "Nordakademie Graduate School",
+            "role": "Master of Science Wirtschaftsinformatik / IT-Management",
+            "startDate": "10.2017",
+            "endDate": "03.2020"
+        },
+        {
+            "institution": "Nordakademie",
+            "role": "Bachelor of Science Wirtschaftsinformatik",
+            "startDate": "10.2013",
+            "endDate": "02.2017"
+        }
+    ]
+}

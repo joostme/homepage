@@ -1,0 +1,45 @@
+@import "../styles/variables";
+@import "../styles/mixins/mixins";
+.projects {
+    @include section-padding();
+    @include inner-shadow();
+    background-color: $color-gold;
+    background: linear-gradient( $color-gold, rgba($color-gold, 0.8));
+    color: white;
+}
+
+.projects__heading {
+    @include section-heading($color-blue);
+}
+
+.projects__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.projects__listItem {
+    @include drop-shadow();
+    color: $color-dark;
+    padding: 1rem;
+    background-color: white;
+    margin: .5rem;
+    max-width: 400px;
+}
+
+.project__techList {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project__tech {
+    @include drop-shadow();
+    color: white;
+    background-color: $color-indigo;
+    padding: .5rem;
+    margin: .5rem;
+}
