@@ -1,0 +1,39 @@
+@import "../styles/variables";
+@import "../styles/mixins/mixins";
+
+.skills {
+    @include section-padding();
+    @include inner-shadow();
+    text-align: center;
+}
+
+.skills__heading {
+    @include section-heading();
+}
+
+.skills__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.skills__listItem {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.skills__icon {
+    color: $color-blue;
+    font-size: 5rem;
+    margin: .5rem;
+    &:hover {
+        color: $color-gold;
+    }
+    
+    @media screen and (max-width: 1024px) {
+        font-size: 3rem;
+    }
+}
