@@ -15,6 +15,11 @@
         "name": "LinkedIn"
     },
     {
+        "link": "https://joostio.medium.com/",
+        "icon": "icon-medium",
+        "name": "Medium"
+    },
+    {
         "link": "mailto:work@joost.io",
         "icon": "icon-mail-alt",
         "name": "Mail"
