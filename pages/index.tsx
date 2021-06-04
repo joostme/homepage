@@ -19,21 +19,23 @@ export interface HomeProps {
   links: Link[];
 }
 
-export default function Home({ skills, projects, workHistory, links }: HomeProps ) {
+export default function Home({ skills, projects, workHistory, links }: HomeProps) {
   return (<>
     <Head>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-      <meta name="Description" content="Joost Zöllner, Software Engineer, Frontend Web Development, Hamburg" />
+      <meta name="Description" content="Joost Zöllner, Software Architect, Frontend Developer, Hamburg" />
       <title>Joost Zöllner - joost.io</title>
     </Head>
-    <Header links={links}/>
-    <Hero />
-    <About />
-    <Work workHistory={workHistory} />
-    <Skills skills={skills} />
-    <Projects projects={projects}/>
+    <Header links={links} />
+    <main className="container mx-auto px-4">
+      <Hero links={links} />
+      <About />
+      <Work workHistory={workHistory} />
+      <Skills skills={skills} />
+      <Projects projects={projects} />
+    </main>
     <Footer />
   </>)
 }

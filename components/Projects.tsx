@@ -1,23 +1,21 @@
 import { Project } from '../lib/projects';
-import styles from './Projects.module.scss';
-
 export interface ProjectsProps {
     projects: Project[];
 }
 
 export default function Projects({ projects }: ProjectsProps) {
     return (<>
-        <section className={styles.projects}>
-            <h1 className={styles.projects__heading}>Projekte</h1>
-            <ul className={styles.projects__list}>
+        <section className="my-10">
+            <h2 className="text-2xl font-bold tracking-tight mb-5">Projekte</h2>
+            <ul className="flex flex-col">
                 {
-                    projects.map(project => <li className={styles.projects__listItem} key={project.title}>
-                        <h1>
-                            <a href={project.link} target="_blank">{project.title}</a>
-                        </h1>
-                        <p>{project.description}</p>
-                        <ul className={styles.project__techList}>
-                            {project.tags.map(tag => <li key={tag} className={styles.project__tech}>{tag}</li>)}
+                    projects.map(project => <li key={project.title} className="bg-white rounded shadow p-4 my-2">
+                        <h3>
+                            <a href={project.link} target="_blank" className="text-xl font-bold text-indigo-600 hover:underline">{project.title}</a>
+                        </h3>
+                        <p className="mt-2 mb-4">{project.description}</p>
+                        <ul className="flex flex-wrap -m-2">
+                            {project.tags.map(tag => <li key={tag} className="rounded m-2 text-gray-500 font-semibold">{tag}</li>)}
                         </ul>
                     </li>
                     )}

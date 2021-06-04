@@ -1,22 +1,20 @@
 import { Link } from '../lib/links';
-import styles from './Header.module.scss';
-
 export interface HeaderProps {
     links: Link[];
 }
 
 export default function Header({ links }: HeaderProps) {
     return (
-        <header className="header">
-            <nav className={styles.header__nav}>
-                <ul className={styles.nav__list}>
+        <header className="w-full">
+            {/* <nav className="px-3 py-2">
+                <ul className="flex items-center container mx-auto">
                     {
-                        links.map((link, index) => <li className={styles.nav__listItem} key={index}>
-                            <a href={link.link} target="_blank" className={`${link.icon} ${styles.nav__icon}`} title={link.name}></a>
+                        links.map((link, index) => <li key={index} className="mx-2">
+                            <a href={link.link} target="_blank" className={`${link.icon} text-3xl text-indigo-600`} title={link.name}><span className="sr-only">{link.name}</span></a>
                         </li>)
                     }
                 </ul>
-            </nav>
+            </nav> */}
         </header>
     );
 }
